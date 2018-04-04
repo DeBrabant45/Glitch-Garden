@@ -239,7 +239,6 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 598a6c1e2612da74fadd3d65d3c37b1a, type: 2}
-  m_RootGameObject: {fileID: 162985978}
   m_IsPrefabParent: 0
 --- !u!1 &83622183
 GameObject:
@@ -303,50 +302,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
---- !u!1 &162985978
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1000010282094976, guid: 598a6c1e2612da74fadd3d65d3c37b1a,
-    type: 2}
-  m_PrefabInternal: {fileID: 50183472}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 162985980}
-  - 114: {fileID: 162985979}
-  m_Layer: 0
-  m_Name: Level Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &162985979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114000013177814048, guid: 598a6c1e2612da74fadd3d65d3c37b1a,
-    type: 2}
-  m_PrefabInternal: {fileID: 50183472}
-  m_GameObject: {fileID: 162985978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf800b5d035fc2042bc164c70dd49942, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  autoLoadNextLevelAfter: 3
---- !u!4 &162985980
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4000012463318908, guid: 598a6c1e2612da74fadd3d65d3c37b1a,
-    type: 2}
-  m_PrefabInternal: {fileID: 50183472}
-  m_GameObject: {fileID: 162985978}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
 --- !u!1 &174761361
 GameObject:
   m_ObjectHideFlags: 0
