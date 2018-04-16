@@ -115,7 +115,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6680342f19ee89a4c8c00678de1e0df6, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 3cf6ad6287cbf42068bcc210b8935350, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.25
   m_Pitch: 1
@@ -405,7 +405,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelMusicChangeArray:
-  - {fileID: 8300000, guid: 6680342f19ee89a4c8c00678de1e0df6, type: 3}
+  - {fileID: 8300000, guid: 3cf6ad6287cbf42068bcc210b8935350, type: 3}
   - {fileID: 8300000, guid: 26a63efbb2853b34fb9599e1bca9682f, type: 3}
   - {fileID: 0}
   - {fileID: 8300000, guid: e613d5b25e02712449f9c33a402e9cd9, type: 3}
@@ -481,7 +481,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: ce3c527bac8b09744a73d6583285c8cf, type: 3}
+    m_Font: {fileID: 12800000, guid: 9a9a7bdde5c74434393a5b2846497384, type: 3}
     m_FontSize: 100
     m_FontStyle: 0
     m_BestFit: 0
@@ -554,7 +554,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 9f38aa094342b934b8fbdfa7b3b7a814, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e79368ba5f19c440f834e537e9313486, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

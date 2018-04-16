@@ -19,11 +19,19 @@ public class MusicManager : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
-    void OnLevelWasLoaded(int level)
+    void OnEnable()
     {
-        AudioClip thisLevelMusic = levelMusicChangeArray[level];
-        Debug.Log("playing clip: " + thisLevelMusic);
-        Debug.Log(thisLevelMusic);
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        AudioClip thisLevelMusic = levelMusicChangeArray[scene.buildIndex];
 
         // if Music is attached 
         if (thisLevelMusic)
@@ -31,9 +39,26 @@ public class MusicManager : MonoBehaviour
             audioSource.clip = thisLevelMusic;
             audioSource.loop = true;
             audioSource.Play();
-            Debug.Log(thisLevelMusic.length);
+            //Debug.Log(thisLevelMusic.length);
         }
     }
+
+    //void OnLevelWasLoaded(int level)
+    //{
+    //    AudioClip thisLevelMusic = levelMusicChangeArray[level];
+    //    Debug.Log("playing clip: " + thisLevelMusic);
+    //    Debug.Log(thisLevelMusic);
+
+    //    // if Music is attached 
+    //    if (thisLevelMusic)
+    //    {
+    //        audioSource.clip = thisLevelMusic;
+    //        audioSource.loop = true;
+    //        audioSource.Play();
+    //        Debug.Log(thisLevelMusic.length);
+    //    }
+
+    //}
 
     public void SetVolume(float volume)
     {
